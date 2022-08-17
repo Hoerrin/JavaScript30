@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-image: url(./src/images/audience.jpg);
+  background-size: cover;
+}
+
+audio {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  color: #eee;
+}
+
+.buttons__container {
+  display: flex;
+  margin-top: 1em;
+}
+
+.button {
+  padding: 1em 0;
+  margin: 0 0.5em;
+  width: 8em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 0.4em;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.06s;
+}
+
+.playing {
+  border: 5px solid rgb(216, 166, 0);
+  box-shadow: rgb(216, 166, 0) 0px 0px 15px 0px;
+  transform: scale(1.1);
+}
+
+.button__keyLetter {
+  color: #eee;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.button__soundName {
+  color: rgb(216, 166, 0);
+  font-family: "Franklin Gothic Thin";
+}
