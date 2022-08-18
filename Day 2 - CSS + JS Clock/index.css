@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(./src/images/audience.jpg);
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  margin-bottom: 0.5em;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.clock {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.clock__mark{
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: calc(50% - 0.25em);
+  height: 1em;
+  width: 0.5em;
+  background-color: black;
+}
+
+.clock__mark--sec{
+  top: calc(50% - 0.25em);
+  left: calc(50% - 0.1em);
+  height: 0.5em;
+  width: 0.2em;
+}
+
+.clock__hand {
+  position: absolute;
+  transform-origin: center left;
+  background-color: black;
+  transition: all 0.2s cubic-bezier(0.42, 1.6, 0.42, 0.7);
+}
+
+#hrHand {
+  height: 0.4rem;
+  width: 5rem;
+  left: calc(50% - 1rem);
+  transform-origin: 1rem;
+  top: calc(50% - 0.2rem);
+}
+
+#minHand {
+  height: 0.3rem;
+  width: 7rem;
+  left: calc(50% - 1rem);
+  transform-origin: 1rem;
+  top: calc(50% - 0.15rem);
+}
+
+#secHand {
+  height: 0.2rem;
+  width: 9rem;
+  left: calc(50% - 1rem);
+  transform-origin: 1rem;
+  top: calc(50% - 0.1rem);
+}
