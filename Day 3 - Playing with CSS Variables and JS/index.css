@@ -1,0 +1,45 @@
+:root {
+  --baseColor: #fa0;
+  --blur: 0px;
+  --spacing: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(30, 36, 58);
+  color: white;
+  font-size: 1.5em;
+  font-family: "Helvetica neue", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  margin: 2em;
+}
+
+span {
+  color: var(--baseColor);
+}
+
+.controls__container {
+  margin: 1em;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--baseColor);
+  filter: blur(var(--blur));
+}
